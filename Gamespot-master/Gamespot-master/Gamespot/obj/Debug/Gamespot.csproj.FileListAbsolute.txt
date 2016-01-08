@@ -1,0 +1,54 @@
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot\Gamespot\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot\Gamespot\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot\Gamespot\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Documents\Gamespot (1)\Gamespot\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Documents\Gamespot (1)\Gamespot\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Documents\Gamespot (1)\Gamespot\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Documents\Gamespot (1)\Gamespot\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Documents\Gamespot (1)\Gamespot\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Documents\Gamespot (1)\Gamespot\Gamespot\obj\Debug\Gamespot.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Verkuijlen\Documents\Gamespot (1)\Gamespot\Gamespot\bin\Oracle.DataAccess.dll
+C:\Users\Kevin Verkuijlen\Documents\Gamespot\Gamespot\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Documents\Gamespot\Gamespot\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Documents\Gamespot\Gamespot\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Documents\Gamespot\Gamespot\Gamespot\bin\Oracle.DataAccess.dll
+C:\Users\Kevin Verkuijlen\Documents\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Documents\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Documents\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\Gamespot\bin\Oracle.DataAccess.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\bin\Oracle.DataAccess.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\obj\Debug\Gamespot.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot-master\Gamespot-master\Gamespot\bin\Oracle.DataAccess.dll
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Downloads\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot-master\Gamespot-master\Gamespot\bin\Oracle.DataAccess.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.dll.config
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\Gamespot\bin\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\Gamespot\bin\Oracle.ManagedDataAccess.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\Gamespot\obj\Debug\Gamespot.csprojResolveAssemblyReference.cache
