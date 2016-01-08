@@ -180,6 +180,7 @@ namespace Gamespot
                         //when it is the same create an object and update the account
                         Account changed = new Account(user.ID, username, password, email, user.AccountType, gendre, country, birthdate);
                         AccountDB.UpdateAccount(changed);
+                        Session["globalAccount"] = AccountDB.GetBy(changed.ID);
                     }
                     else
                     {
@@ -192,6 +193,7 @@ namespace Gamespot
                                 // create an object and update the account
                                 Account changed = new Account(user.ID, username, password, email, user.AccountType, gendre, country, birthdate);
                                 AccountDB.UpdateAccount(changed);
+                                Session["globalAccount"] = AccountDB.GetBy(changed.ID);
                             }
                         }
                     }

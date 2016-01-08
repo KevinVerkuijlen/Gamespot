@@ -443,6 +443,8 @@ namespace Gamespot.C_Codes_And_Classes
             try
             {
                 db.OpenConnection();
+                db.Query = "ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MM-YYYY HH24:MI:SS'";
+                db.Command.ExecuteNonQuery();
 
                 db.Query = "INSERT INTO GAME (GAMEID,GAMENAME, GENRENAME, THEMENAME, PLATFORMEN, FIRSTRELEASE, RATING, DESCRIPTION, ONTWERPER, UITGEVER) VALUES(seq_Game.nextval, :gamename, :genrename, :themename, :platform, :firstrelease, :rating, :description, :designer, :publisher)";
                 db.Command.Parameters.Add(new OracleParameter(":gamename", newgame.GameName));

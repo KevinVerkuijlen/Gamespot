@@ -230,6 +230,8 @@ namespace Gamespot.C_Codes_And_Classes
             try
             {
                 db.OpenConnection();
+                db.Query = "ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MM-YYYY HH24:MI:SS'";
+                db.Command.ExecuteNonQuery();
 
                 db.Query = "INSERT INTO ACCOUNT (AccountID, Password, UserName, Gendre, Birthdate, Email_Adress, Country) VALUES (seq_Account.nextval, :password, :username, :gendre, TO_DATE(:birthdate,'DD-MM-YYYY'), :email, :country)";
                 db.Command.Parameters.Add(new OracleParameter(":password", newaccount.Password));
@@ -239,7 +241,6 @@ namespace Gamespot.C_Codes_And_Classes
                 db.Command.Parameters.Add(new OracleParameter(":email", newaccount.Email));
                 db.Command.Parameters.Add(new OracleParameter(":country", newaccount.Country));
                 db.Command.ExecuteNonQuery();
-                db.Commit();
             }
             catch (OracleException)
             {
@@ -261,18 +262,21 @@ namespace Gamespot.C_Codes_And_Classes
             try
             {
                 db.OpenConnection();
+                db.OpenConnection();
+                db.Query = "ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MM-YYYY HH24:MI:SS'";
+                db.Command.ExecuteNonQuery();
 
-                db.Query = "UPDATE ACCOUNT SET PASSWORD=password, USERNAME=username, GENDRE=gendre, BIRTHDATE=TO_DATE(:birthdate,'DD-MM-YYYY'), EMAIL_ADRESS=email, COUNTRY=country WHERE ACCOUNTID=id";
-                db.Command.Parameters.Add(new OracleParameter(":id", changedaccount.ID));
+                db.Query = "UPDATE ACCOUNT SET PASSWORD=:password, USERNAME=:username, GENDRE=:gendre, EMAIL_ADRESS=:email, BIRTHDATE=TO_DATE(:birthdate,'DD-MM-YYYY'), COUNTRY=:country WHERE ACCOUNTID=:id";
                 db.Command.Parameters.Add(new OracleParameter(":password", changedaccount.Password));
                 db.Command.Parameters.Add(new OracleParameter(":username", changedaccount.UserName));
                 db.Command.Parameters.Add(new OracleParameter(":gendre", changedaccount.GendreType.ToString()));
-                db.Command.Parameters.Add(new OracleParameter(":birthdate", changedaccount.Birthdate.ToShortDateString()));
                 db.Command.Parameters.Add(new OracleParameter(":email", changedaccount.Email));
+                db.Command.Parameters.Add(new OracleParameter(":birthdate", changedaccount.Birthdate.ToShortDateString()));  
                 db.Command.Parameters.Add(new OracleParameter(":country", changedaccount.Country));
+                db.Command.Parameters.Add(new OracleParameter(":id", changedaccount.ID));
                 db.Command.ExecuteNonQuery();
             }
-            catch (OracleException)
+            catch (OracleException e)
             {
                 throw;
             }

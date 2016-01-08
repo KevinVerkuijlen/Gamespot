@@ -134,6 +134,8 @@ namespace Gamespot.C_Codes_And_Classes
             try
             {
                 db.OpenConnection();
+                db.Query = "ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MM-YYYY HH24:MI:SS'";
+                db.Command.ExecuteNonQuery();
 
                 db.Query = "INSERT INTO NEWS (NEWs_ID, NEWS_TITEL, ACCOUNTID, GAMEID, UPLOADDATE, CONTENT, RATING) VALUES(seq_News.nextval, :titel, :accountid, :gameid, TO_DATE(:uploaddate,'DD-MM-YYYY'), :content, :rating)";
                 db.Command.Parameters.Add(new OracleParameter(":titel", newnews.Titel));
