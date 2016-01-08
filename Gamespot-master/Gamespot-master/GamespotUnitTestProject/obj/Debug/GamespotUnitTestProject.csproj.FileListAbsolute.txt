@@ -1,0 +1,8 @@
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\bin\Debug\GamespotUnitTestProject.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\bin\Debug\GamespotUnitTestProject.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\bin\Debug\Gamespot.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\bin\Debug\Gamespot.pdb
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\obj\Debug\GamespotUnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\obj\Debug\GamespotUnitTestProject.dll
+C:\Users\Kevin Verkuijlen\Desktop\Gamespot\Gamespot-master\Gamespot-master\GamespotUnitTestProject\obj\Debug\GamespotUnitTestProject.pdb
