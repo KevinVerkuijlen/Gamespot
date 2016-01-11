@@ -31,6 +31,10 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="description">the description of the console</param>
         public Console(string consolenameid, string consoletype, string description)
         {
+            if (consolenameid == null) { throw new ArgumentNullException("consolenameid", "consolenameid is null"); }
+            if (consoletype == null) { throw new ArgumentNullException("consoletype", "consoletype is null"); }
+            if (description == null) { throw new ArgumentNullException("description", "console description is null"); }
+
             this.ConsoleNameID = consolenameid;
             this.ConsoleType = consoletype;
             this.Description = description;

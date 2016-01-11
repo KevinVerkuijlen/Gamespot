@@ -24,6 +24,14 @@ namespace Gamespot
             }
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20GameSpot_Master.Master", true);
+        }
+
         protected void HomeTag_Click(object sender, EventArgs e)
         {
             if (user != null)

@@ -35,6 +35,14 @@ namespace Gamespot
             }
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20NewsPostes.aspx", true);
+        }
+
         //this event will show the selected news information from the news listbox
         protected void AllNews_ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {

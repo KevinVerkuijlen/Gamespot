@@ -49,6 +49,14 @@ namespace Gamespot
             }
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20Console.aspx", true);
+        }
+
         //this event will load all games which have the same platform as the selected console
         protected void Console_DropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {

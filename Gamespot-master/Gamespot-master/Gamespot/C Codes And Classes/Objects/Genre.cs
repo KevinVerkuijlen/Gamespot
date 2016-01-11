@@ -26,6 +26,9 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="description">the description of the genre</param>
         public Genre(string genrename, string description)
         {
+            if (genrename == null) { throw new ArgumentNullException("genrename", "genrename is null"); }
+            if (description == null) { throw new ArgumentNullException("description", "genre description is null"); }
+
             this.GenreName = genrename;
             this.Description = description;
         }

@@ -54,6 +54,13 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="birthdate">the birthdate of the account</param>
         public Account(string username, string password, string email, Gendre gendretype, string country, DateTime birthdate)
         {
+            if (username == null) { throw new ArgumentNullException("userName", "username is null"); }
+            if (password == null) { throw new ArgumentNullException("password", "password is null"); }
+            if (email == null) { throw new ArgumentNullException("email", "email is null"); }
+            if (gendretype == null) { throw new ArgumentNullException("gendrytype", "gendrytype is null"); }
+            if (country == null) { throw new ArgumentNullException("country", "country is null"); }
+            if (birthdate == null) { throw new ArgumentNullException("birthdate", "birthdate is null"); }
+
             this.UserName = username;
             this.Password = password;
             this.Email = email;
@@ -75,6 +82,15 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="birthdate">the birthdate of the account</param>
         public Account(int id, string username, string password, string email, string accounttype, Gendre gendretype, string country, DateTime birthdate)
         {
+            if (id <= 0) { throw new ArgumentOutOfRangeException("id", "account id is invalid"); }
+            if (username == null) { throw new ArgumentNullException("userName", "username is null"); }
+            if (password == null) { throw new ArgumentNullException("password", "password is null"); }
+            if (email == null) { throw new ArgumentNullException("email", "email is null"); }
+            if (accounttype == null) { throw new ArgumentNullException("accounttype", "accounttype is null"); }
+            if (gendretype == null) { throw new ArgumentNullException("gendrytype", "gendrytype is null"); }
+            if (country == null) { throw new ArgumentNullException("country", "country is null"); }
+            if (birthdate == null) { throw new ArgumentNullException("birthdate", "birthdate is null"); }
+
             this.ID = id;
             this.UserName = username;
             this.Password = password;

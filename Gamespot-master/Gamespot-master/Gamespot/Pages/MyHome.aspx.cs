@@ -58,6 +58,14 @@ namespace Gamespot
             }
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20MyHome.aspx", true);
+        }
+
         //this event is triggerd when a game is selected from the want listbox
         protected void Want_ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {

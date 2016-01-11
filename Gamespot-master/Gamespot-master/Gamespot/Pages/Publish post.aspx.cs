@@ -38,6 +38,14 @@ namespace Gamespot.Pages
             }
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20Publish post.aspx", true);
+        }
+
         //when a radio button is selected the controls for the type of post will be visible and enabeld
         protected void PostType_RadioButtonList_SelectedIndexChanged(object sender, EventArgs e)
         {

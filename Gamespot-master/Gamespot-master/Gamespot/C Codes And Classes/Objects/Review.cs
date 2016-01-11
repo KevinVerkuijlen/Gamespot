@@ -41,6 +41,15 @@ namespace Gamespot.C_Codes_And_Classes
         public Review(string titel, int accountid, int gameid, DateTime uploaddate, string content, string pluspoints, string minpoints, int rating) 
             : base (titel, accountid, gameid, uploaddate)
         {
+            if (titel == null) { throw new ArgumentNullException("titel", "review titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "review accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "review gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "review uploaddate is null"); }
+            if (content == null) { throw new ArgumentNullException("content", "review content is null"); }
+            if (pluspoints == null) { throw new ArgumentNullException("pluspoints", "pluspoints is null"); }
+            if (minpoints == null) { throw new ArgumentNullException("minpoints", "minpoints is null"); }
+            if (rating <= 0) { throw new ArgumentOutOfRangeException("rating", "reivew rating is invalid"); }
+
             this.Content = content;
             this.PlusPoint = pluspoints;
             this.MinPoint = minpoints;
@@ -62,6 +71,16 @@ namespace Gamespot.C_Codes_And_Classes
         public Review(int ID, string titel, int accountid, int gameid, DateTime uploaddate, string content, string pluspoints, string minpoints, int rating)
             : base(ID,titel, accountid, gameid, uploaddate)
         {
+            if (ID <= 0) { throw new ArgumentOutOfRangeException("id", "review id is invalid"); }
+            if (titel == null) { throw new ArgumentNullException("titel", "review titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "review accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "review gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "review uploaddate is null"); }
+            if (content == null) { throw new ArgumentNullException("content", "review content is null"); }
+            if (pluspoints == null) { throw new ArgumentNullException("pluspoints", "pluspoints is null"); }
+            if (minpoints == null) { throw new ArgumentNullException("minpoints", "minpoints is null"); }
+            if (rating <= 0) { throw new ArgumentOutOfRangeException("rating", "reivew rating is invalid"); }
+
             this.Content = content;
             this.PlusPoint = pluspoints;
             this.MinPoint = minpoints;

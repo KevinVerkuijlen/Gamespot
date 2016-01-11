@@ -65,6 +65,16 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="designer">the name of the desigener of the game</param>
         public Game(string gamename, string genrename, string themename, string platform, DateTime firstrelease, int rating, string description, string publisher, string designer)
         {
+            if (gamename == null) { throw new ArgumentNullException("gamename", "gamename is null"); }
+            if (genrename == null) { throw new ArgumentNullException("genrename", "genrename is null"); }
+            if (themename == null) { throw new ArgumentNullException("themename", "themename is null"); }
+            if (platform == null) { throw new ArgumentNullException("platform", "platform is null"); }
+            if (firstrelease == null) { throw new ArgumentNullException("firstrelease", "firstrelease is null"); }
+            if (rating <= 0) { throw new ArgumentOutOfRangeException("rating", "rating is invalid"); }
+            if (description == null) { throw new ArgumentNullException("description", "game description is null"); }
+            if (publisher == null) { throw new ArgumentNullException("publisher", "publisher is null"); }
+            if (Designer == null) { throw new ArgumentNullException("Designer", "Designer is null"); }
+
             this.GameName = gamename;
             this.GenreName = genrename;
             this.ThemeName = themename;
@@ -91,6 +101,17 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="designer">the name of the desigener of the game</param>
         public Game(int id, string gamename, string genrename, string themename, string platform, DateTime firstrelease, int rating, string description, string publisher, string designer)
         {
+            if (id <= 0) { throw new ArgumentOutOfRangeException("id", "game id is invalid"); }
+            if (gamename == null) { throw new ArgumentNullException("gamename", "gamename is null"); }
+            if (genrename == null) { throw new ArgumentNullException("genrename", "genrename is null"); }
+            if (themename == null) { throw new ArgumentNullException("themename", "themename is null"); }
+            if (platform == null) { throw new ArgumentNullException("platform", "platform is null"); }
+            if (firstrelease == null) { throw new ArgumentNullException("firstrelease", "firstrelease is null"); }
+            if (rating <= 0) { throw new ArgumentOutOfRangeException("rating", "rating is invalid"); }
+            if (description == null) { throw new ArgumentNullException("description", "game description is null"); }
+            if (publisher == null) { throw new ArgumentNullException("publisher", "publisher is null"); }
+            if (Designer == null) { throw new ArgumentNullException("Designer", "Designer is null"); }
+
             this.ID = id;
             this.GameName = gamename;
             this.GenreName = genrename;

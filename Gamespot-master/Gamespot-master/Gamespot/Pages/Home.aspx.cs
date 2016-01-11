@@ -39,6 +39,14 @@ namespace Gamespot
             }
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20Home.aspx", true);
+        }
+
         //this event will change the page to show all information for the type of post
         protected void Postes_ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {

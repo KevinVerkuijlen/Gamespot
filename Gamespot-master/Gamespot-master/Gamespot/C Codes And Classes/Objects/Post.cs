@@ -80,6 +80,11 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="uploaddate">The UploadDate of the Post</param>
         public Post(string titel, int accountid, int gameid, DateTime uploaddate)
         {
+            if (titel == null) { throw new ArgumentNullException("titel", "titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "uploaddate is null"); }
+
             this.PostTitel = titel;
             this.P_AccountID = accountid;
             this.P_GameID = gameid;
@@ -96,6 +101,12 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="uploaddate">The UploadDate of the Post</param>
         public Post(int id, string titel, int accountid, int gameid, DateTime uploaddate)
         {
+            if (ID <= 0) { throw new ArgumentOutOfRangeException("id", "id is invalid"); }
+            if (titel == null) { throw new ArgumentNullException("titel", "titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "uploaddate is null"); }
+
             this.PostID = id;
             this.PostTitel = titel;
             this.P_AccountID = accountid;
@@ -103,9 +114,5 @@ namespace Gamespot.C_Codes_And_Classes
             this.P_UploadDate = uploaddate;
         }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
     }
 }

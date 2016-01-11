@@ -26,6 +26,14 @@ namespace Gamespot.Pages
             
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20Login.aspx", true);
+        }
+
         //this event will add a new account in the database
         protected void Register_Button_Click(object sender, EventArgs e)
         {

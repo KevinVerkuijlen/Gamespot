@@ -40,6 +40,14 @@ namespace Gamespot.Pages
             }
         }
 
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            Server.Execute("Error.aspx?handler=Page_Error%20-%20Admin.aspx", true);
+        }
+
         //this event is trigged when a post type is selected from the dropdownlist
         protected void PostType_DropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {

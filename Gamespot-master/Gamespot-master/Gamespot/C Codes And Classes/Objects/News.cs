@@ -31,6 +31,13 @@ namespace Gamespot.C_Codes_And_Classes
         public News(string titel, int accountid, int gameid, DateTime uploaddate, string content, int rating)
             : base(titel, accountid, gameid, uploaddate)
         {
+            if (titel == null) { throw new ArgumentNullException("titel", "news titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "news accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "news gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "news uploaddate is null"); }
+            if (content == null) { throw new ArgumentNullException("content", "news content is null"); }
+            if (rating <= 0) { throw new ArgumentOutOfRangeException("rating", "news rating is invalid"); }
+
             this.Content = content;
             this.Rating = rating;
         }
@@ -48,6 +55,13 @@ namespace Gamespot.C_Codes_And_Classes
         public News(int ID, string titel, int accountid, int gameid, DateTime uploaddate, string content, int rating)
             : base(ID, titel, accountid, gameid, uploaddate)
         {
+            if (ID <= 0) { throw new ArgumentOutOfRangeException("id", "news id is invalid"); }
+            if (titel == null) { throw new ArgumentNullException("titel", "news titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "news accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "news gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "news uploaddate is null"); }
+            if (content == null) { throw new ArgumentNullException("content", "news content is null"); }
+            if (rating <= 0) { throw new ArgumentOutOfRangeException("rating", "news rating is invalid"); }
             this.Content = content;
             this.Rating = rating;
         }

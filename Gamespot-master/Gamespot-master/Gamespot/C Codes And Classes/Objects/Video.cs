@@ -32,6 +32,12 @@ namespace Gamespot.C_Codes_And_Classes
         public Video(string titel, int accountid, int gameid, DateTime uploaddate, string videourl)
             : base (titel, accountid, gameid, uploaddate)
         {
+            if (titel == null) { throw new ArgumentNullException("titel", "video titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "video accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "video gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "video uploaddate is null"); }
+            if (videourl == null) { throw new ArgumentNullException("videourl", "videourl is null"); }
+
             this.VideoURL = videourl;
         }
 
@@ -47,6 +53,13 @@ namespace Gamespot.C_Codes_And_Classes
         public Video(int ID, string titel, int accountid, int gameid, DateTime uploaddate, string videourl)
             : base(ID, titel, accountid, gameid, uploaddate)
         {
+            if (ID <= 0) { throw new ArgumentOutOfRangeException("id", "video id is invalid"); }
+            if (titel == null) { throw new ArgumentNullException("titel", "video titel description is null"); }
+            if (accountid <= 0) { throw new ArgumentOutOfRangeException("accountid", "video accountid is invalid"); }
+            if (gameid <= 0) { throw new ArgumentOutOfRangeException("gameid", "video gameid is invalid"); }
+            if (uploaddate == null) { throw new ArgumentNullException("uploaddate", "video uploaddate is null"); }
+            if (videourl == null) { throw new ArgumentNullException("videourl", "videourl is null"); }
+
             this.VideoURL = videourl;
         }
 

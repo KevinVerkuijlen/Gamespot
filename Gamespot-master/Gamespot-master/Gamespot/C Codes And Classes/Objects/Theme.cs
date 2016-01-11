@@ -26,6 +26,9 @@ namespace Gamespot.C_Codes_And_Classes
         /// <param name="description">the description of the theme</param>
         public Theme(string themename, string description)
         {
+            if (themename == null) { throw new ArgumentNullException("themename", "themename is null"); }
+            if (description == null) { throw new ArgumentNullException("description", "theme description is null"); }
+
             this.ThemeName = themename;
             this.Description = description;
         }
